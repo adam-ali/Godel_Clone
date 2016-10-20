@@ -973,31 +973,31 @@ ul {
 }
 .dots-bg li:first-child {
     left: 0;
-    top: 34.9%;
+    top: 179.54%;
     background: url('images/dots.png') no-repeat 100% 0;
     background-size: contain;
 }
 .dots-bg li:nth-child(2) {
     left: 0;
-    top: 59.7%;
+    top: 305.9%;
     background: url('images/dots-2.png') no-repeat 56% 0;
     background-size: 250px;
 }
 .dots-bg li:nth-child(3) {
     left: 0;
-    top: 83%;
+    top: 417.9%;
     background: url('images/dots-3.png') no-repeat 100% 0;
     background-size: contain;
 }
 .dots-bg li:nth-child(4) {
     right: 0;
-    top: 27.8%;
+    top: 143.9%;
     background: url('images/dots-4.png') no-repeat 0 0;
     background-size: contain;
 }
 .dots-bg li:nth-child(5) {
     right: 0;
-    top: 83.4%;
+    top: 420.4%;
     background: url('images/dots-5.png') no-repeat 0 0;
     background-size: contain;
 }
