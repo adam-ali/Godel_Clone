@@ -43,3 +43,19 @@ $(function(){
     }
   });
 });
+
+window.setInterval(function(){
+  /// call your function here
+  // $('.inner').css({'color':'#75c8d2'})
+  if($(".odd").hasClass( "blue" )){
+    $(".odd").removeClass("blue");
+  }else {
+    $(".odd").addClass("blue");
+  }
+  if($(".even").hasClass( "blue" )){
+    $(".even").removeClass("blue");
+  }else {
+    $(".even").addClass("blue");
+  }
+  console.log('five');
+}, 5000);
