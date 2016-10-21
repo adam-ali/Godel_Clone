@@ -1,66 +1,45 @@
-$(document).ready(function() {
-  $("#lightSlider").lightSlider({
-    item: 3,
-    autoWidth: false,
-    slideMove: 1, // slidemove will be 1 if loop is true
-    slideMargin: 10,
-
-    addClass: '',
-    mode: "slide",
-    useCSS: true,
-    cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
-    easing: 'linear', //'for jquery animation',////
-
-    speed: 400, //ms'
-    auto: false,
-    loop: false,
-    slideEndAnimation: true,
-    pause: 2000,
-
-    keyPress: false,
-    controls: true,
-    prevHtml: '',
-    nextHtml: '',
-
-    rtl: false,
-    adaptiveHeight: false,
-
-    vertical: false,
-    verticalHeight: 500,
-    vThumbWidth: 100,
-
-    thumbItem: 10,
-    pager: true,
-    gallery: false,
-    galleryMargin: 5,
-    thumbMargin: 5,
-    currentPagerPosition: 'middle',
-
-    enableTouch: true,
-    enableDrag: true,
-    freeMove: true,
-    swipeThreshold: 40,
-
-    responsive: [],
-
-    onBeforeStart: function (el) {
-    },
-    onSliderLoad: function (el) {
-    },
-    onBeforeSlide: function (el) {
-    },
-    onAfterSlide: function (el) {
-    },
-    onBeforeNextSlide: function (el) {
-    },
-    onBeforePrevSlide: function (el) {
-    }
-  });
-});
 $(".scroll-down").click(function() {
   $('html,body').animate({
       scrollTop: $(".location").offset().top},
     'slow');
 });
 
+$(".custom").click(function () {
 
+  console.log($('.custom').css("background-position").substr(0,3));
+  if($('.custom').css("background-position").substr(0,3)<290) {
+    $(".custom").animate({'background-position': '+=40px'});
+  }
+});
+$(".location").click(function () {
+  console.log('back   ' + $('.custom').css("background-position").substr(0,3));
+  if($('.custom').css("background-position").substr(0,3)>170) {
+    $(".custom").animate({'background-position': '-=40px'});
+  }
+});
+
+
+$(function(){
+  var lastScrollTop = 0, delta = 5;
+  $(window).scroll(function(){
+    var nowScrollTop = $(this).scrollTop();
+    if(Math.abs(lastScrollTop - nowScrollTop) >= delta){
+      if (nowScrollTop > lastScrollTop){
+        // SCROLLING DOWN
+        if(nowScrollTop >=99 && nowScrollTop<= 742){
+          if($('.custom').css("background-position").substr(0,3)<395) {
+            $(".custom").css('background-position', '+=4px');
+          }
+        }
+      } else {
+        // SCROLLING UP
+        if(nowScrollTop >=99 && nowScrollTop<= 742) {
+          if($('.custom').css("background-position").substr(0,3)>170) {
+            $(".custom").css('background-position', '-=4px');
+          }
+        }
+      }
+      lastScrollTop = nowScrollTop;
+    }
+  });
+});
