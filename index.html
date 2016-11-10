@@ -25,7 +25,7 @@
                     <p class="control has-addons">
                         <a class=" button is-primary is-outlined">
 
-                            <span>GOLDTECH.COM</span>
+                            <span>WWW.GOLDTECH.COM</span>
                         </a>
                         <a class="button is-dark is-disabled">
 
@@ -41,12 +41,13 @@
                     <img src="images/logo.svg">
                 </a>
                 <nav class="nav" role="navigation">
+                  <div class="menu-btn mobile-only"><span></span></div>
                     <ul>
-                        <li><a>Jobs</a></li>
-                        <li><a>Why Godel?</a></li>
-                        <li><a>Meet the Team</a></li>
-                        <li><a>News</a></li>
-                        <li><a>Contact Us</a></li>
+                      <li><a>Jobs</a></li>
+                      <li><a>Why Godel?</a></li>
+                      <li><a>Meet the Team</a></li>
+                      <li><a>News</a></li>
+                      <li><a>Contact Us</a></li>
                     </ul>
                 </nav>
                 <div class="contacts">
@@ -67,17 +68,18 @@
                   <source src="images/Video.mp4" type="video/mp4">
                   <source src="http://careers.godeltech.com/wp-content/uploads/2015/10/Loop-LQ.webm" type="video/webm">
               </video>
+            <div class="open-video mobile-hidden">
+              <span class="desktop">Play Full Video</span>
+              <span class="tablet">Play Godel Video</span>
+            </div>
               <div class="content-frame">
                   <img class="background-image" src="http://careers.godeltech.com/wp-content/uploads/2015/10/Godel-Team-walking-in.png" alt="">
-                  <div class="open-video">
-                      <span class="desktop">Play Full Video</span>
-                  </div>
                   <div class="content">
                       <h2>We`re on the lookout for bright and
                           <strong>innovative minds</strong>
                           to join us. Think you fit the bill?
                       </h2>
-                      <div class="vacancies">
+                      <div class="vacancies desktop-only">
                           <span>Check out our current vacancies for</span>
                           <ul class="list">
                               <li>
@@ -92,10 +94,24 @@
                       <div class="search">
                           <div class="input-wrap">
                               <input name="career-q " type="text" placeholder="Search for Job e.g. Developer, Marketing">
-                              <button type="submit"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                              <button type="submit"><i class="fa fa-angle-right" aria-hidden="true"></i>
                               </button>
                           </div>
                       </div>
+                    <div class="vacancies desktop-hidden mobile-hidden">
+                      <span>Check out our current vacancies for</span>
+                      <ul class="list">
+                        <li><a href="http://careers.godeltech.com/en/careers/category/marketing/">Marketing</a></li>
+                        <li><span>/</span> <a href="http://careers.godeltech.com/en/careers/category/sales/">Sales</a></li>
+                      </ul>
+                    </div>
+                    <!--<div class="open-video mobile-hidden">-->
+                      <!--<span class="desktop">Play Full Video</span>-->
+                      <!--<span class="tablet">Play Godel Video</span>-->
+                    <!--</div>-->
+                    <div class="open-video mobile-only">
+                      <span>Play Godel Video</span>
+                    </div>
                   </div>
                   <div class="scroll-down" >
                       <i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
@@ -106,10 +122,10 @@
               <div class="content-frame">
                   <h2>Our locations</h2>
                   <ul>
-                      <li><a href="http://careers.godeltech.com/en/location/manchester/"><h3>Manchester</h3><p>View location<i class="icon-arrow-right"></i></p></a></li>
-                      <li><a href="http://careers.godeltech.com/en/location/london/"><h3>London</h3><p>View location<i class="icon-arrow-right"></i></p></a></li>
-                      <li><a href="http://careers.godeltech.com/en/location/brest/"><h3>Brest</h3><p>View location<i class="icon-arrow-right"></i></p></a></li>
-                      <li><a href="http://careers.godeltech.com/en/location/minsk/"><h3>Minsk</h3><p>View location<i class="icon-arrow-right"></i></p></a></li>
+                      <li><a href="http://careers.godeltech.com/en/location/manchester/"><h3>Manchester</h3><p>View location <i class="fa fa-angle-right"></i></p></a></li>
+                      <li><a href="http://careers.godeltech.com/en/location/london/"><h3>London</h3><p>View location <i class="fa fa-angle-right"></i></p></a></li>
+                      <li><a href="http://careers.godeltech.com/en/location/brest/"><h3>Brest</h3><p>View location <i class="fa fa-angle-right"></i></p></a></li>
+                      <li><a href="http://careers.godeltech.com/en/location/minsk/"><h3>Minsk</h3><p>View location <i class="fa fa-angle-right"></i></p></a></li>
                   </ul>
               </div>
           </section>
@@ -137,6 +153,9 @@
                   <h2>Quality over revenue</h2>
                   <p>Combining a ‘no b@ll$hit’ approach with some of the most exceptional software development and quality assurance talent in Europe,&nbsp;we set the bar high on our expectation of team members to ensure that we exceed&nbsp;the expectations of our clients. &nbsp;Equally, we set the bar high for our clients on the types of projects we choose to work on to ensure they are as serious as we are!</p>
                 </article>
+
+                <article class="desktop-hidden" style="background-image: url(http://careers.godeltech.com/wp-content/uploads/2015/10/img-1.jpg);">
+                </article>
               </div>
             </div>
           </section>
@@ -157,6 +176,7 @@
                     </div>
                   </div>
                 </div>
+                <div class="slider-nav"></div>
               </div>
             </div>
           </section>
@@ -167,8 +187,8 @@
                           <h2>Benefits</h2>
                           <P>Having fun and delivering the very best service are the founding principles of Godel. We’re always on the lookout for talented and creative people who are willing to go above and beyond the call of duty for their team mates and our clients. Working for Godel comes with a range of benefits to help you to enjoy your work here, including:</P>
                       </li>
-                      <li class="md">
-                          <div class="inner even blue" >
+                      <li class="md" >
+                          <div class="inner even blue " >
                               <i class="fa fa-trophy fa-5x" aria-hidden="true"></i>
                               <p>Respected for agile delivery</p>
                           </div>
@@ -379,8 +399,13 @@
 
     <footer class="footer" style="margin-top: -431px;">
       <div class="content-frame">
-        <div class="col logo"><div id="text-3" class="widget_text">			<div class="textwidget"><a href="http://www.godeltech.com" target="_blank"><i class="logo icon-logo"></i></a></div>
-        </div></div>
+        <div class="col logo">
+          <div id="text-3" class="widget_text">
+            <div class="textwidget">
+              <a href="http://www.godeltech.com" target="_blank"><i class="logo icon-logo"></i></a>
+            </div>
+          </div>
+        </div>
         <div class="col"><div id="nav_menu-2" class="widget_nav_menu"><h3>Sitemap</h3><ul id="menu-header-menu-en-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50"><a href="/careers">Jobs</a></li>
           <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51"><a href="/about-us-eng">Why Godel?</a></li>
           <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52"><a href="/meet-the-team">Meet the Team</a></li>
@@ -397,6 +422,9 @@
           <div id="text-5" class="widget_text">
             <h3>Contact</h3>
             <div class="textwidget">
+
+              <a class="icon-logo-link" href="http://godeltech.com" target="_blank"><i class="icon-logo desktop-hidden"></i></a>
+
               <address>27th Floor <br> City Tower <br> Piccadilly Plaza <br> Manchester <br> M1 4BT</address>
               <ul class="contacts">
                 <li>
@@ -414,7 +442,9 @@
           </div>
         </div>
       </div>
-      <div class="to-top desktop-hidden"><i class="icon-arrow-top"></i></div>
+      <div class="to-top desktop-hidden">
+        <i class="fa fa-angle-up"></i>
+      </div>
     </footer>
 
 
