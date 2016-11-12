@@ -42,7 +42,6 @@ if($( window ).width() >980) {
         lastScrollTop = nowScrollTop;
 
         if ($(".inner").is(":hidden")) {
-          // console.log('ssssssssssssss')
           $(".inner").slideDown("slow");
         }
       }
@@ -53,6 +52,19 @@ $(".to-top").click(function() {
   $("html, body").animate({ scrollTop: 0 }, "slow");
   return false;
 });
+$(".close-btn").click(function() {
+  $(".header .nav ul").css('display', 'none');
+});
+$(".menu-btn").click(function() {
+  $(".menu-btn").toggleClass('open');
+  if($(".header .nav ul").css('display') ==='none') {
+    $(".header .nav ul").css('display', 'block');
+  }else{
+    $(".header .nav ul").css('display', 'none');
+  }
+});
+
+
 window.setInterval(function(){
   /// call your function here
   // $('.inner').css({'color':'#75c8d2'})
