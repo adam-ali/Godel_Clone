@@ -1,6 +1,10 @@
+@font-face {
+    font-family: condensed;
+    src: url(ubuntu-font-family-0.83/Ubuntu-C.ttf);
+}
 html *
 {
-    font-family: "Ubuntu Condensed";
+    font-family: Condensed;
 }
 
 a {
